@@ -42,8 +42,8 @@ services:
     container_name: web
     ports:
      - "8080:80"
-   # volumes:
-     # - ./conf.d:/etc/nginx/conf.d
+    volumes:
+      - ./conf.d:/etc/nginx/nginx.conf
     networks:
       - my_network
     depends_on:
